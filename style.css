@@ -23,3 +23,12 @@
       height: 10em;
   }
 
+.about.jumbotron{
+    padding: 8rem 3rem;
+    font-size: 1em
+    /* color: white; */
+}
+
+.topics{
+    padding: 5rem 2rem;
+}
