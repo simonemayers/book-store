@@ -44,20 +44,27 @@
 }
 
 footer{
-    /* text-align: right; */
     background-color: hsl(225, 70%, 51%);
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #e9ecef ;
     position:fixed; 
-    /* left: 0px;  */
-    /* right: 0px;  */
+    color: #e9ecef ;
     width: 100%;
     bottom: 0px; 
-    /* margin-top: -10%; */
-    /* height: 10%; */
+}
+
+footer a{
+    color: #e9ecef ;
+}
+footer a:visited{
+    color: #e9ecef ;
+}
+
+footer a:hover{
+    color: #e9ecef ;
+
 }
 
 .logo{
