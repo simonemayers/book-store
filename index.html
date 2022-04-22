@@ -36,18 +36,32 @@
                 </li> -->
             </li>
             <li class="nav-item ms-auto">
-              <a class="nav-link" href="cart.html">Cart</a>
+            <a class="nav-link" href="cart.html">Cart</a>
             </li>
             </ul>
-          </div>
         </div>
-      </nav>
+        </div>
+    </nav>
 
 
-      <div class="jumbotron">
-          <h1>Welcome To Software Engineering Tutorials</h1>
-          <p>Learn exactly what you need to know and move on with your day with SET</p>
-      </div>
+    <div class="jumbotron">
+        <h1>Welcome To Software Engineering Tutorials</h1>
+        <p>Learn exactly what you need to know and move on with your day with SET</p>
+    </div>
+
+    <div class="filter">
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                All tutorials
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><button id="all-tutorials-button" class="dropdown-item">All Tutorials</button></li>
+                <li><button id="most-popular-button" class="dropdown-item">Most Popular</button></li>
+                <li><button id="new-arrivals-button" class="dropdown-item" >New Arrivals</button></li>
+                <li><button id="best-deals-button" class="dropdown-item">Best Deals</button></li>
+            </ul>
+        </div>
+    </div>
 
       <div class="main" >
         <div id="most-popular"  class="card text-center featured">
@@ -64,7 +78,7 @@
                       <p class="card-text">Whether you’re building a site from scratch or with the Bootstrap CSS framework, you’ll need to have a basic understanding of HTML and CSS to create and customize your layouts.</p>
                     </div>
                     <button class="card-footer btn fs-4 add-to-cart">
-                      <small class="text-muted">$129.99</small>
+                      <small class="text-muted">$1299.99</small>
                       <i class="bi bi-cart-plus-fill text-warning"></i>
                     </button>
                   </div>
@@ -97,6 +111,48 @@
                 </div>
               </div>
             </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./src/weather-app.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Weather App Tutorial</h5>
+                    <p class="card-text">We’ll learn how to build a simple, yet fully functional weather app with Vanilla JavaScript. We have a lot of interesting things to cover, so grab a cup of coffee and let’s get started! </p>
+                    </div>
+                    <button class="card-footer btn fs-4 add-to-cart">
+                    <small class="text-muted">$75.99</small>
+                    <i class="bi bi-cart-plus-fill text-warning"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./src/data-science.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Data Science: Deep Learning Neural Networks</h5>
+                    <p class="card-text">Learn how Deep Learning REALLY works (not just some diagrams and magical black box code).Learn how a neural network is built from basic building blocks (the neuron).</p>
+                    </div>
+                    <button class="card-footer btn fs-4 add-to-cart">
+                    <small class="text-muted">$22.99</small>
+                    <i class="bi bi-cart-plus-fill text-warning"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./src/spring.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Reactive Microservicse with Spring Webflux</h5>
+                    <p class="card-text">Spring WebFlux is a reactive non-blocking web stack which provides better performance compared to traditional Spring Web MVC! </p>
+                    </div>
+                    <button class="card-footer btn fs-4 add-to-cart">
+                    <small class="text-muted">$52.99</small>
+                    <i class="bi bi-cart-plus-fill text-warning"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+            
             <!-- <div class="card-footer text-muted">
               2 days ago
             </div> -->
@@ -206,6 +262,19 @@
             </div> -->
           </div>
       </div>
+
+      <footer class="footer">
+          <div class="logo">SET</div>
+          <div class="socials">
+            <i class="bi bi-linkedin"></i>
+            <i class="bi bi-github"></i>
+            <i class="bi bi-discord"></i>
+            <i class="bi bi-medium"></i>
+            <i class="bi bi-slack"></i>
+            <i class="bi bi-cash"></i>
+          </div>
+          <p class="copyright">This site was created by Simone Mayers. © 2022 Copyright</p>
+      </footer>
     
     
 

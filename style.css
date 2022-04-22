@@ -32,3 +32,59 @@
 .topics{
     padding: 5rem 2rem;
 }
+
+.cart-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-item-image {
+    width: 10rem;
+}
+
+footer{
+    /* text-align: right; */
+    background-color: hsl(225, 70%, 51%);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #e9ecef ;
+    position:fixed; 
+    /* left: 0px;  */
+    /* right: 0px;  */
+    width: 100%;
+    bottom: 0px; 
+    /* margin-top: -10%; */
+    /* height: 10%; */
+}
+
+.logo{
+    font-size: 2em;
+}
+
+.socials{
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5em;
+}
+
+.copyright{
+    font-size: 0.6em;
+    margin-bottom: 0%;
+}
+
+.filter{
+    margin: auto;
+    text-align: center;
+    padding-bottom: 4%;
+}
+
+/* .cart-item-description{
+    font-size: 0.5em;
+    width: 25%;
+    text-align: center;
+    margin: auto;
+} */
