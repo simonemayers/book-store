@@ -12,11 +12,6 @@ function addItem(tutorial){
     newItem.innerHTML = JSON.parse(localStorage.getItem(`${tutorial.id}`))
 }
 
-// function showItemAdding(){
-
-// }
-
-
 buttons.map(button => {
     button.addEventListener("click", (e) => {
         if(e.target.children.length){
@@ -46,7 +41,6 @@ function fillCart(arr){
 function displayCart(arr){
     let cartItem = fillCart(arr)
 
-    // let table = document.createElement("table")
     let tableHead = document.createElement("thead")
     let tableHeadRow = document.createElement("tr")
     let actionTableHeader = document.createElement("th")
@@ -55,7 +49,6 @@ function displayCart(arr){
     let priceTableHeader = document.createElement("th")
     let tableBody = document.createElement("tbody")
     
-    // cart.appendChild(table)
     cart.appendChild(tableHead)
     tableHead.appendChild(tableHeadRow)
     cart.appendChild(tableBody)
@@ -74,11 +67,9 @@ function displayCart(arr){
     tableHeadRow.appendChild(priceTableHeader)
     priceTableHeader.id = "price-name"
     priceTableHeader.textContent = "Price"
-    
-    
+        
     for(let i=0; i<cartList.length; i++){
         let nameText = document.getElementById(`${i}`).querySelector(".card-title").textContent
-        // let descriptionText = document.getElementById(`${i}`).querySelector(".card-text").textContent
         let imageSrc = document.getElementById(`${i}`).querySelector(".card-img-top").src
         let priceText = document.getElementById(`${i}`).querySelector("small").textContent
         document.getElementById(`${i}`).style.display = "none"
@@ -111,11 +102,6 @@ function displayCart(arr){
         name.textContent = nameText
         name.classList.add("cart-item-name")
         info.appendChild(name)
-
-        // let description = document.createElement("div")
-        // description.textContent = descriptionText; 
-        // description.classList.add("cart-item-description")
-        // info.appendChild(description)
         
         let quantity = document.createElement("td")
         quantity.classList.add("cart-item-quantity")
@@ -144,16 +130,9 @@ function displayTotal(){
     tbody.appendChild(totalRow)
     totalRow.innerHTML = 
     `<td colspan="1"> </td><td colspan="1">Total</td><td colspan="1">${cartList.length}</td><td colspan="1">$${total}</td>`
-
-    // totalRow.innerHTML = `<td colspan='4'>${total}</td>`
-    // totalRow.textContent = total
-
-    console.log(total)
 }
 
-
 if(Array.from(cartLink.classList).includes("active")){
-    console.log("hello")
     displayCart(cartList)
     displayTotal()
 }
@@ -192,8 +171,6 @@ Array.from(document.querySelectorAll(".action")).map(button => {
         let localIds = Object.keys(localStorage).filter((key) => key.length < 3)
         for(let i=0; i< localIds.length; i++){
             if(localStorage[localIds[i]].includes(name)){
-                console.log("yes")
-                console.log(localIds[i])
                 localStorage.removeItem(localIds[i])
                 window.location.reload()
             }
